@@ -7,12 +7,12 @@ CYAN='\033[0;36m'
 NC='\033[0m' # No Color
 
 # Check for command
-if [[ -z $(command -v pip) ]]
+if [[ -z $(command -v pip3) ]]
 then
-    printf "${RED}pip not found. Install python3 using brew (brew install python3)${NC}\n"
+    printf "${RED}pip3 not found. Install python3 using brew (brew install python3)${NC}\n"
     DEPENDENCY_MISSING=""
 else
-    echo "pip found: " "$(which pip)"
+    echo "pip3 found: " "$(which pip3)"
 fi
 if [[ -z $(command -v brew) ]]
 then
